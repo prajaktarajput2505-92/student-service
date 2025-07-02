@@ -21,6 +21,7 @@ public class TestController {
     @Autowired
     private StudentService studentService;
 
+
     @GetMapping("/join")
     public List<Student> testJoin() {
         List<Student> students = repo.getStudentsWithJoinOnly();
