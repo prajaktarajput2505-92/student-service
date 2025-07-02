@@ -28,10 +28,6 @@ jobs:
       - name: Build Docker image
         run: docker build -t 232879/student-service:latest .
 
-      - name: Run Spring Boot container
-        run: |
-            docker run -d -p 8080:8080 --name student-service 232879/student-service:latest
-
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
